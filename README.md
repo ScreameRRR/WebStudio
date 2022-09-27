@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Adaptive layout
+WebStuido 
+HTML5 & CSS3 & SASSS
