@@ -1,0 +1,32 @@
+// utils
+@import './utils/variables';
+@import './utils/hidden';
+
+// base
+@import './base/base';
+@import './base/container';
+@import './base/section';
+
+// components
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/burger-btn';
+@import './components/backdrop';
+@import './components/title';
+@import './components/social';
+@import './components/filter-btn';
+@import './components/address';
+@import './components/subscribe';
+
+//layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/modal';
+@import './layout/menu';
+@import './layout/advantages';
+@import './layout/directions';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/projects';
+@import './layout/footer';

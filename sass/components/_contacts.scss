@@ -1,0 +1,54 @@
+/* Контакти */
+.contacts {
+  display: none;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    &__item:first-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+    &__item:first-child {
+      margin-bottom: 0;
+    }
+  }
+  margin-left: auto;
+
+  &__link {
+    color: $secondary-text-color;
+    fill: currentColor;
+
+    letter-spacing: 0.02em;
+
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and(min-width:768px) {
+      font-size: 12px;
+      line-height: 1.67;
+      letter-spacing: 0.02em;
+    }
+
+    @media screen and(min-width:768px) {
+      font-weight: 500;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

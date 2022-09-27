@@ -1,0 +1,87 @@
+/* Секція переваги */
+.advantage {
+  @media screen and(min-width:768px) {
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 47px;
+  }
+
+  &__list {
+    display: block;
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and(min-width:1200px) {
+    }
+  }
+
+  &__item {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    @media screen and(min-width:768px) {
+      width: 354px;
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+    @media screen and(min-width:1200px) {
+      width: 270px;
+      &:nth-child(-n + 6) {
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__image {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $grey-bcg;
+
+    margin-bottom: 30px;
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1200px) {
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and(min-width:768px) {
+      text-align: start;
+    }
+
+    @media screen and(min-width:1200px) {
+    }
+  }
+
+  &__description {
+    color: $secondary-text-color;
+    line-height: 1.71;
+
+    @media screen and(min-width:768px) {
+    }
+
+    @media screen and(min-width:1200px) {
+    }
+  }
+}

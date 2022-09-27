@@ -1,0 +1,29 @@
+/* Footer */
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and(min-width:768px) {
+    }
+    @media screen and(min-width:1200px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__link {
+    color: $white-text-color;
+
+    line-height: 1.71;
+    font-style: normal;
+
+    transition: color 250ms $timing-function;
+
+    &--transparent {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
